@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let a=prompt("Ingrese el número 1");
+        let b=prompt("Ingrese el número 2");
+        let c=prompt("Ingrese el número 3");
+        var suma=parseInt(a)+parseInt(b)+parseInt(c);
+        const aviso =document.createElement("p");
+        document.body.append(aviso);
+
+        function menorOmayorSuma(suma)
+        {
+            if(suma > 100)
+            {
+                aviso.innerText="La suma es mayor 100";
+            }
+            else
+            {
+              
+               
+                    aviso.innerText="La suma es menor a 100";
+               
+            };
+        
+            
+        }
+        menorOmayorSuma(suma);
+
+    </script>
+</body>
+</html>

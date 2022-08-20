@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        let numero1=prompt("Agregar valor 1");
+        let numero2=prompt("Agregar valor 2");
+        let n1=parseInt(numero1);
+        let n2=parseInt(numero2);
+        const aviso=document.createElement("p");
+        document.body.append(aviso);
+
+      
+
+        function moduloNumero(numero1,numero2){
+            if(numero1==0  ||  numero2==0)
+             {
+              aviso.innerText="No se acepta el 0";
+            }
+            else
+            {
+                if(numero1<numero2)
+                {
+                    let resultadoModulo=n2 % n1;
+                    multiploSioNo(resultadoModulo);
+                 
+                }
+                else
+                {
+                    let resultadoModulo=n1 % n2;
+                    multiploSioNo(resultadoModulo);
+                }
+            };
+          
+          
+        };
+
+        function multiploSioNo(resultadoModulo){
+            if(resultadoModulo==0)
+            {
+                return aviso.innerHTML="Es múltiplo";
+            }
+            else
+            {
+                return aviso.innerText="No es múltiplo";
+            }
+        };
+        moduloNumero(n1,n2);
+
+
+
+
+
+    </script>
+</body>
+</html>

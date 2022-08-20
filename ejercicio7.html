@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero1=prompt("Digite el primer número");
+        const alerta=document.createElement("p");
+        document.body.append(alerta);
+
+
+        function negativoPositivo(numero1){
+            if(numero1>0)
+            {
+                alerta.innerText="El número es positivo";
+            }
+            else
+            {
+                if (numero1<0)
+                {
+                alerta.innerText="El número es negativo"
+                }
+                 else
+                 {
+                    alerta.innerText="El número es igual a 0"
+                 }
+
+            }   
+    }
+    negativoPositivo(numero1);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let producto=prompt("1.Hamburguesa  2.Salchipapa  3.Perro  4.Carne asada  Escoja un número ");
+        const aviso=document.createElement("p");
+        document.body.append(aviso);
+
+        function pedidoMenu(){
+            switch(producto){
+                case "1":
+                    aviso.innerText="5000 mil pesos";
+                    break;
+                case "2":
+                    aviso.innerText="3500 mil pesos";
+                    break;
+                case "3":
+                    aviso.innerText="6000 mil pesos";
+                    break;
+                case "4":
+                    aviso.innerText="10000 mil pesos";
+                    break;
+                default:   alert("Este producto no está en el portafólio");
+                break;
+            }
+        }
+           
+      
+  pedidoMenu();
+
+    </script>
+</body>
+</html>

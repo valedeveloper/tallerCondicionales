@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=prompt("Ingrese el número 1");
+        let b=prompt("Ingrese el número 2");
+        let suma=parseInt(a)+parseInt(b);
+        const aviso =document.createElement("p");
+        document.body.append(aviso);
+
+        function menorOmayorSuma(suma){
+                if(suma===10)
+                {
+                    aviso.innerText="La suma es igual a 10";
+                }
+                else{
+                    if(suma>10)
+                    {
+                        aviso.innerText="La suma es mayor a 10";
+                    }
+                    else
+                    {
+                        aviso.innerText="La suma es menor a 10";
+                    }
+                }
+        }
+        menorOmayorSuma(suma);
+
+
+
+
+    </script>
+</body>
+</html>

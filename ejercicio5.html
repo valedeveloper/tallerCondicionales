@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const aviso=document.createElement("p");
+        document.body.append(aviso);
+        let pregunta=prompt("1.Área triángulo  2.Área cuadrado 3.Área círculo Escoja un número para hallar el área de una figura");
+        let base;
+        let altura;
+        let radio;
+        let area;
+
+
+        function areaTriangulo(base,altura)
+        {
+            area=(parseInt(base)*parseInt(altura))/2;
+            return aviso.innerText= area;
+        }
+
+        function areaCuadrado(base) 
+        {
+            area=Math.pow(base,2);
+            return aviso.innerText= area;
+        }
+
+        function areaCirculo(radio){
+            area=Math.PI*Math.pow(radio,2);
+            return aviso.innerText= area;
+        }
+        
+        
+        function resultado(){
+
+            switch(pregunta)
+            {
+                case "1":
+                    base=prompt("Digite el valor de la base");
+                    altura=prompt("Digite el valor de la altura");
+                    areaTriangulo(base,altura);
+                    
+                    break;
+                case "2":
+                    base=prompt("Digite el valor del lado");
+                    areaCuadrado(base);
+                    break;
+                case "3":
+                    radio=prompt("Digite el valor del radio");
+                    areaCirculo(radio);
+                    break;
+                default: alert("No existe esa opción, intentalo de nuevo");
+                break;
+
+            }
+        }
+
+        resultado();
+
+
+
+      
+    </script>
+</body>
+</html>
